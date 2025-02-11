@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<title>buttons</title>
+<link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <header>
-        <h1>NBA Update today</h1>
-        <img src="LA clippers.jpg" alt="">
-        <p>The LA Clippers beats the Dallas Mavericks in game 1 playoffs with a score of 109-97 LA clippers win the game!</p>
-        <p> Follow us for more NBA updates!</p>
-    </header>
 
+<div class="container">
+  <button class="day-button" onclick="showBox('monday')">Monday</button>
+  <button class="day-button" onclick="showBox('tuesday')">Tuesday</button>
+  <button class="day-button" onclick="showBox('wednesday')">Wednesday</button>
+  <button class="day-button" onclick="showBox('thursday')">Thursday</button>
+  <button class="day-button" onclick="showBox('friday')">Friday</button>
+  <button class="day-button" onclick="showBox('saturday')">Saturday</button>
+  <button class="day-button" onclick="showBox('sunday')">Sunday</button>
+</div>
+
+<div id="movingBox" class="box"></div>
+
+<script src="./assets/js/script.js"></script>
 </body>
 </html>

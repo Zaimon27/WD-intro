@@ -1,0 +1,70 @@
+/* style.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    font-family: sans-serif; /* Added a default font */
+    background-color: #f4f4f4; /* Subtle background color */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: auto;
+    margin-left: 20px; 
+    align-items: flex-start;
+}
+
+.day-button {
+    width: 120px; 
+    padding: 12px; 
+    border: none;
+    border-radius: 8px; 
+    cursor: pointer;
+    font-weight: 600; 
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15); 
+    background-color: #fff; 
+    color: #333;
+    text-align: center; 
+    position: relative; 
+    overflow: hidden; 
+}
+
+.day-button:hover {
+    background-color: #eee;
+    transform: translateY(-2px);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.day-button:active {
+    transform: translateY(0);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.day-button::before { 
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;  
+    background-color: transparent; 
+    transition: background-color 0.3s ease;
+}
+
+.box {
+    width: 400px;
+    height: 400px;
+    background-color: gray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);              
+    transition: background-color 0.5s ease-in-out; 
+    border-radius: 12px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
